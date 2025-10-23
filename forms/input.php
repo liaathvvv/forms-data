@@ -114,6 +114,7 @@
 </head>
 <body>
 
+<!-- <img src="kth.jpeg" alt="kth"> -->
   <div>
     <h1>Form Input Data Siswa</h1>
 
@@ -159,7 +160,7 @@
           <select id="agama" name="agama" required>
             <option value="">-- Pilih Agama --</option>
             <?php
-            $list_agama = ['Islam', 'Kristen', 'Katolik', 'Hindu', 'Buddha', 'Konghucu'];
+            $list_agama = ['Islam', 'Kristen', 'Katolik', 'Hindu', 'Buddha', 'Konghucu', 'Atheis'];
             foreach ($list_agama as $a) {
               $selected = (isset($agama) && $agama == $a) ? 'selected' : '';
               echo "<option value=\"$a\" $selected>$a</option>";
